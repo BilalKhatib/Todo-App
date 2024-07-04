@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a1128;
+}
+
+.navbar {
+  background-color: #fefcfb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 150px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Playwrite AU TAS", cursive;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.navbar .col h1 {
+  color: #001f54;
+  font-weight: 300;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar ul .navbarListItem {
+  color: #001f54;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.navbar ul .navbarListItem:hover,
+.navbar ul .navbarListItem.active {
+  border-bottom: 2px solid #001f54;
+}
+
+.container {
+  padding: 50px 150px;
+  color: #fefcfb;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.container form .col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container form textarea {
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  outline: none;
+  height: 20vh;
+  resize: none;
+  font-size: large;
+  background-color: #677DB7;
+}
+
+.container form textarea::placeholder {
+  color: white;
+}
+
+.container form button {
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+  background-color: #001f54;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  color: #fefcfb;
+  transition: all ease-in-out 0.2s;
+}
+
+.container button:hover {
+  color: #001f54;
+  background-color: #fefcfb;
+  border: 1px solid #001f54;
+  cursor: pointer;
+}
+
+.container .containerHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container .containerHeader h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.container .containerHeader small {
+  font-size: 24px;
+}
+
+.container .containerBody {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.container .containerBody .todoCard {
+  background-color: #034078;
+  padding: 30px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all ease-in-out 0.4s;
+  width: 42%;
+}
+
+.container .containerBody .todoCard:hover {
+  background-color: #1282a2;
+  cursor: pointer;
+}
+
+.container .containerBody .todoCard .todoCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .containerBody .todoCard .divider {
+  padding: 15px;
+}
+
+.footer {
+  color: #fefcfb;
+  background-color: #001f54;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 150px;
+  position: sticky;
+  bottom: 0;
+}
